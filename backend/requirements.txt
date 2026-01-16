@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+langchain
+langgraph
+langchain-anthropic
+langchain-openai
+langchain-google-genai
+python-multipart
+python-docx
+httpx
+termcolor
