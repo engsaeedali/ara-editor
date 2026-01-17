@@ -12,3 +12,4 @@ python-docx
 httpx
 termcolor
 networkx
+pydantic-settings
