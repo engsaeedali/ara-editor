@@ -26,5 +26,6 @@ COPY . .
 EXPOSE 8080
 
 # Command to run the application using uvicorn
-# Cloud Run passes the PORT env var, but we default to 8080
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
+# Command to run the application using uvicorn
+# Use shell form to allow variable expansion for PORT (defaulting to 8080)
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT:-8080}"]
